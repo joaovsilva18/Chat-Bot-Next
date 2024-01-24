@@ -2,10 +2,13 @@
 
 import React from "react";
 
-const BotMessage = ({ botName, text }) => {
+const BotMessage = ({ botName, text, time }) => {
   return (
-    <div className="flex items-end justify-end mb-2">
-      <div className="bg-green-700 text-white py-2 px-4 rounded-lg">
+    <div className="chat chat-end">
+      <div className="chat-header">
+        <time className="text-xs opacity-50">{time}</time>
+      </div>
+      <div className="chat-bubble chat-bubble-success">
         <div className="text-xs text-gray-400">{botName}</div>
         {text}
       </div>
