@@ -46,7 +46,7 @@ const Chat = () => {
   ];
 
   const chatStyle = {
-    backgroundImage: 'url("https://www.idinheiro.com.br/wp-content/uploads/2022/08/stone-2048.png")',
+    backgroundImage: 'url("")',
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

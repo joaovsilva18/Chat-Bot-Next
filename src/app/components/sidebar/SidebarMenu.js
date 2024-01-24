@@ -4,7 +4,7 @@ import EmailMenuItem from "./EmailMenuItem";
 
 const SidebarMenu = () => {
   const emailItems = [
-    { id: "forattini@gmail.com", title: "forattini@gmail.com", newMessages: 99 },
+    { id: "forattini@gmail.com", title: "forattini@gmail.com", newMessages: 99, threads: ["Thread 1", "Thread 2", "Thread 3"] },
     { id: "john.doe@example.com", title: "john.doe@example.com" , newMessages: 7},
     { id: "jane.smith@gmail.com", title: "jane.smith@gmail.com"},
     { id: "user123@hotmail.com", title: "user123@hotmail.com" , newMessages: 5},
@@ -19,7 +19,7 @@ const SidebarMenu = () => {
   return (
     <div className="bg-gray-800 w-70 h-screen overflow-y-auto">
       <ul className="menu">
-      <li className="menu-title text-center text-green-500 font-bold py-4 border-b-2 border-green-500 text-xl mb-4">
+        <li className="menu-title text-center text-green-500 font-bold py-4 border-b-2 border-green-500 text-xl mb-4">
           SESSIONS
         </li>
         {emailItems.map((item) => (
@@ -28,6 +28,7 @@ const SidebarMenu = () => {
             emailId={item.id}
             emailTitle={item.title}
             newMessages={item.newMessages}
+            threads={item.threads}
           />
         ))}
       </ul>
