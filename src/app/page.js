@@ -1,9 +1,9 @@
 // page.js
 import React from "react";
-import Navbar from "../app/components/Navbar";
-import SidebarMenu from "../app/components/SidebarMenu";
-import Chat from "../app/components/Chat";
-import Footer from "../app/components/Footer";
+import Navbar from "./components/navbar/Navbar";
+import SidebarMenu from "./components/sidebar/SidebarMenu";
+import Chat from "../app/components/chat/Chat";
+import Footer from "./components/footer/Footer";
 import Home from "../app/pages/Home.js";  // Alteração aqui
 
 export default function HomePage() {

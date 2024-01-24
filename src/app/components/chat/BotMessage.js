@@ -8,9 +8,10 @@ const BotMessage = ({ botName, text, time }) => {
       <div className="chat-header">
         <time className="text-xs opacity-50">{time}</time>
       </div>
-      <div className="chat-bubble chat-bubble-success">
-        <div className="text-xs text-gray-400">{botName}</div>
-        {text}
+      <div className="chat-bubble chat-bubble-success border-2 border-black">
+
+        <div className="text-xs text-black-100">{botName}</div>
+        <p className="text-sm">{text}</p>
       </div>
     </div>
   );

@@ -9,11 +9,12 @@ const UserMessage = ({ userName, text, time }) => {
         <time className="text-xs opacity-50">{time}</time>
       </div>
       <div className="chat-bubble chat-bubble">
-        <div className="text-xs text-black-100">{userName}</div>
-        {text}
+      <div className="text-xs text-black-100">{userName}</div>
+        <p className="text-sm">{text}</p>
       </div>
     </div>
   );
 };
 
 export default UserMessage;
+
